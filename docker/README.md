@@ -1,11 +1,23 @@
 # Build and hosting
 
-`README.md` in the repository root is the single source of truth. `render.py`
-converts it to HTML with [python-markdown](https://pypi.org/project/Markdown/),
-wraps the status column in badge spans, rewrites relative links to sibling
-markdown files so they resolve on the published page, and injects the result
-into `template.html`. The Dockerfile does that in a build stage and copies the
-finished `index.html` into an nginx image.
+`README.md` and `plugins/*.md` in the repository are the single source of truth.
+`render.py` converts each of them to HTML with
+[python-markdown](https://pypi.org/project/Markdown/), wraps the status column in
+badge spans, rewrites links between the rendered pages to their `.html` output
+(and links to unpublished markdown files to the repository), and injects the
+result into `template.html`. `README.md` becomes `index.html`; the plugin pages
+keep their path, so `plugins/serum-2.md` is served at `/plugins/serum-2.html`.
+
+The Dockerfile runs `check.py` first — a build fails rather than publishing an
+index that disagrees with its own detail pages — then renders into `site/` and
+copies that tree into an nginx image.
+
+Render locally with:
+
+```sh
+python3 docker/check.py
+python3 docker/render.py docker/template.html site README.md plugins/*.md
+```
 
 ## Run it locally
 
@@ -37,20 +49,22 @@ The overlay expects Traefik to already be running with the Docker provider, a
 for the `!reset` tag. Any other proxy works too — point it at the published
 `HTTP_PORT`, or attach the container to your proxy's network and target port 80.
 
-The page is baked into the image, so re-run the same `up -d --build` after
-editing the README.
+The pages are baked into the image, so re-run the same `up -d --build` after
+editing any markdown.
 
 ## Layout
 
 | Path | Role |
 | --- | --- |
-| `README.md` | Content — the tracker table lives here |
+| `README.md` | Content — the index table lives here |
+| `plugins/*.md` | Content — one detail page per tracked plugin |
 | `CONTRIBUTING.md` | How to add or change an entry |
 | `AGENTS.md` | Instructions for coding agents working in this repository |
 | `JOURNAL.md` | Dated research passes and pipeline changes |
 | `docs/research/` | Full evidence behind each research pass |
 | `docker/README.md` | This file — build and hosting |
 | `docker/render.py` | Markdown → HTML renderer (adds status badges) |
+| `docker/check.py` | Fails if the index and the plugin pages disagree |
 | `docker/template.html` | Page shell and styling |
 | `docker/nginx.conf` | Server config for the runtime image |
 | `Dockerfile` | Render stage + nginx stage |

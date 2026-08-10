@@ -5,6 +5,48 @@ decided, and what is still unresolved. Newest entry first. Add an entry when you
 change the pipeline or do a research pass — not for a single-row fix, which the
 commit message covers on its own.
 
+## 2026-08-10 — Verification pass, detail pages, dated entries
+
+Applied the research below to the content, after checking it rather than trusting
+it. Every cited yabridge issue was fetched (`gh issue view`) and every brand was
+searched against the issue tracker for reports by named users, so each finding now
+carries a date, a reporter and a link. The yabridge README and CHANGELOG were read
+from the repository at `master`.
+
+Structural change: the README table is now an **index** — plugin, last checked,
+status — and each row links to `plugins/<slug>.md` carrying the dated findings,
+host DAW, Wine and yabridge versions, fixes and a vendor product link. Version
+detail in three columns was the thing making the table unreadable. 31 entries.
+
+`docker/render.py` now renders many sources into `site/` and rewrites links
+between them; `docker/check.py` fails the build if a row and its page disagree on
+status or date, or if a page lacks a vendor link or findings table. Verified the
+image this time: `docker compose up -d --build`, container healthy, index and
+detail pages 200, unknown paths 404 (the nginx SPA fallback was removed, it was
+serving the index under every wrong URL).
+
+Corrections to the pass below, all from applying the independence rule strictly —
+yabridge's README and CHANGELOG are **one** source, not two:
+
+- **TDR Nova** stays `reported`, not `verified`. The only report that could be
+  opened is yabridge's own documentation.
+- **MeldaProduction** stays `verified`, but on different evidence: independent
+  crash reports [#144](https://github.com/robbert-vdh/yabridge/issues/144) and
+  [#126](https://github.com/robbert-vdh/yabridge/issues/126), not docs plus a
+  Gearspace snippet.
+- **Kontakt** `verified` holds, on #372, #356 and #469 from three reporters.
+- **Serum** split into Serum 1 (`reported`) and Serum 2 (`confirmed broken`) as
+  proposed. #413 and #476 are both Serum 2, from different reporters a year apart.
+- **Spitfire Audio** and **Omnisphere** are `reported, mixed` rather than plain
+  `reported` — their sources disagree on the outcome. The status vocabulary now
+  admits that fourth value, which the UAD row was already using informally.
+- **Soundtoys Gullfoss** was dropped: no yabridge issue mentions it and the KVR
+  lead could not be opened, so there was nothing to put on a page.
+- Gearspace (403) and LinuxMusicians (JS-only) are still unreachable. Rows resting
+  on them say "snippet only, thread not opened" on their page.
+
+Host and Wine notes became a second table on the index, as suggested.
+
 ## 2026-08-10 — Research pass: yabridge sources
 
 Swept the yabridge repository and community sources for entries missing from the

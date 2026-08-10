@@ -1,5 +1,7 @@
 *
 !README.md
+!plugins
 !docker/render.py
+!docker/check.py
 !docker/template.html
 !docker/nginx.conf

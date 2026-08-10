@@ -1,0 +1,13 @@
+# Valhalla Room
+
+*Status: reported · last checked 2026-08-10*
+
+[Vendor page](https://valhalladsp.com/shop/reverb/valhalla-room/) · [All plugins](../README.md)
+
+Reported working. A second write-up naming it alongside Kontakt and Morph 2 exists but could not be opened, so it stays single-sourced.
+
+## Findings
+
+| Date | Report | Environment | Source |
+| --- | --- | --- | --- |
+| 2026-08-10 | Listed as working by forum posters | unspecified | [Gearspace thread](https://gearspace.com/board/music-computers/1449241-linux-compatible-hardware-software-plugins.html) — snippet only, thread not opened |

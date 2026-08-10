@@ -1,14 +1,20 @@
 #!/usr/bin/env python3
-"""Render README.md into a static index.html using an HTML template.
+"""Render markdown sources into static HTML pages using a shared template.
 
-Usage: render.py <source.md> <template.html> <output.html>
+Usage: render.py <template.html> <output-dir> <source.md>...
 
-The template must contain the placeholders {{TITLE}} and {{CONTENT}}. Links to
-sibling markdown files (CONTRIBUTING.md and such) are rewritten to point at the
-repository, since those files are not published alongside the page.
+`README.md` becomes `index.html`; any other source keeps its relative path with
+an `.html` extension, so `plugins/serum-2.md` becomes `plugins/serum-2.html`.
+The template must contain the placeholders {{TITLE}} and {{CONTENT}}.
+
+Relative links between rendered sources are rewritten to their `.html` output.
+Links to markdown files that are not being rendered (CONTRIBUTING.md and such)
+point at the repository instead, since those files are not published.
 """
 
 import html
+import os
+import posixpath
 import re
 import sys
 
@@ -59,13 +65,33 @@ def tagify(html_text):
     )
 
 
-def link_markdown_files(html_text):
-    """Point relative links to .md files at the repository instead of the site."""
-    return re.sub(
-        r'href="(?!\w+:|//|#)([^"]+\.md)"',
-        rf'href="{REPO_URL}/blob/main/\1"',
-        html_text,
-    )
+def output_path(source):
+    """Relative output path for a source: README.md -> index.html."""
+    source = source.replace(os.sep, "/")
+    if source == "README.md":
+        return "index.html"
+    return re.sub(r"\.md$", ".html", source)
+
+
+def link_markdown_files(html_text, page, pages):
+    """Rewrite relative .md links: to a sibling page, or to the repository.
+
+    `page` is the source path being rendered and `pages` maps every source path
+    in this run to its output path, so a link is only rewritten to `.html` when
+    the target is actually published.
+    """
+    page_dir = posixpath.dirname(page.replace(os.sep, "/"))
+
+    def repl(match):
+        target = match.group(1)
+        resolved = posixpath.normpath(posixpath.join(page_dir, target))
+        if resolved in pages:
+            href = posixpath.relpath(pages[resolved], page_dir or ".")
+        else:
+            href = f"{REPO_URL}/blob/main/{resolved}"
+        return f'href="{href}"'
+
+    return re.sub(r'href="(?!\w+:|//|#)([^"]+\.md)"', repl, html_text)
 
 
 def extract_title(source):
@@ -73,30 +99,39 @@ def extract_title(source):
     return match.group(1).strip() if match else "README"
 
 
-def main(argv):
-    if len(argv) != 4:
-        sys.exit(__doc__.strip())
-
-    source_path, template_path, output_path = argv[1:]
-
+def render(source_path, template, pages):
     with open(source_path, encoding="utf-8") as fh:
         source = fh.read()
 
-    title = extract_title(source)
-
     body = markdown.markdown(source, extensions=["tables", "sane_lists"])
-    body = tagify(badgeify(link_markdown_files(body)))
+    body = tagify(badgeify(link_markdown_files(body, source_path, pages)))
     body = "\n".join("    " + line for line in body.splitlines())
 
+    title = extract_title(source)
+    return template.replace("{{TITLE}}", html.escape(title)).replace(
+        "{{CONTENT}}", body
+    )
+
+
+def main(argv):
+    if len(argv) < 4:
+        sys.exit(__doc__.strip())
+
+    template_path, output_dir = argv[1:3]
+    sources = argv[3:]
+
     with open(template_path, encoding="utf-8") as fh:
-        page = fh.read()
+        template = fh.read()
 
-    page = page.replace("{{TITLE}}", html.escape(title)).replace("{{CONTENT}}", body)
+    pages = {s.replace(os.sep, "/"): output_path(s) for s in sources}
 
-    with open(output_path, "w", encoding="utf-8") as fh:
-        fh.write(page)
-
-    print(f"wrote {output_path} ({len(page)} bytes)")
+    for source_path in sources:
+        target = os.path.join(output_dir, output_path(source_path))
+        os.makedirs(os.path.dirname(target) or ".", exist_ok=True)
+        page = render(source_path, template, pages)
+        with open(target, "w", encoding="utf-8") as fh:
+            fh.write(page)
+        print(f"wrote {target} ({len(page)} bytes)")
 
 
 if __name__ == "__main__":
