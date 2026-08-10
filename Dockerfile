@@ -11,7 +11,7 @@ RUN python docker/check.py \
  && python docker/render.py docker/template.html site README.md plugins/*.md
 
 # Stage 2: serve it
-FROM nginx:1.27-alpine
+FROM nginx:1.31-alpine
 
 COPY docker/nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=render /build/site/ /usr/share/nginx/html/
