@@ -17,3 +17,7 @@ Works with one setting changed. Single source — yabridge's documentation is th
 | Date | Report | Environment | Source |
 | --- | --- | --- | --- |
 | 2026-08-10 | Knob drag behaviour and the Linear workaround | any host | [yabridge known issues](https://github.com/robbert-vdh/yabridge#known-issues-and-fixes) |
+
+---
+
+[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)

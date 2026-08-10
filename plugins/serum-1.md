@@ -19,3 +19,7 @@ Works once two Wine tweaks are in place. Single source: yabridge's own documenta
 | Date | Report | Environment | Source |
 | --- | --- | --- | --- |
 | 2026-08-10 | Documented fixes for Serum 1 | any host | [yabridge known issues](https://github.com/robbert-vdh/yabridge#known-issues-and-fixes) |
+
+---
+
+[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)

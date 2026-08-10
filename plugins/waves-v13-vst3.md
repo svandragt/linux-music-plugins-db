@@ -20,3 +20,7 @@ Memory problems under Wine and random crashes. yabridge's own advice is to avoid
 | 2025-02-15 | Single Waves plugin not being picked up | unspecified | [#402](https://github.com/robbert-vdh/yabridge/issues/402) (open, reported by pheerai) |
 | 2026-04-30 | Asking whether Waves Clarity can be made to work | unspecified | [#478](https://github.com/robbert-vdh/yabridge/issues/478) (closed, reported by geextahslex) |
 | 2026-08-10 | V13 VST3 memory issues, V12 recommended | any host | [yabridge known issues](https://github.com/robbert-vdh/yabridge#known-issues-and-fixes) |
+
+---
+
+[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)

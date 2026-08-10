@@ -19,3 +19,7 @@ Works. The GUI can look like it ignores mouse clicks, but that is a redraw probl
 | --- | --- | --- | --- |
 | 2024-04-02 | Error when opening the Sforzando GUI | unspecified | [#327](https://github.com/robbert-vdh/yabridge/issues/327) (closed, reported by jbmestelan) |
 | 2026-08-10 | Redraw explanation and workaround | any host | [yabridge known issues](https://github.com/robbert-vdh/yabridge#known-issues-and-fixes) |
+
+---
+
+[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)

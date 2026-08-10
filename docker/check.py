@@ -73,6 +73,10 @@ def main():
             errors.append(f"plugins/{slug}.md: no findings table")
         if "not a compatibility guarantee" not in text:
             errors.append(f"plugins/{slug}.md: no caution line")
+        # Two links home: one at the top, one after the findings table.
+        if text.count("[All plugins](../README.md)") < 2:
+            errors.append(f"plugins/{slug}.md: needs a link back to the index at the "
+                          "top and in the footer")
 
     for error in errors:
         print(error)

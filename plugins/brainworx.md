@@ -17,3 +17,7 @@ Reported working by forum posters. No yabridge issue confirms or denies it, and 
 | Date | Report | Environment | Source |
 | --- | --- | --- | --- |
 | 2026-08-10 | Listed as working by forum posters | unspecified | [Gearspace thread](https://gearspace.com/board/music-computers/1449241-linux-compatible-hardware-software-plugins.html) — snippet only, thread not opened |
+
+---
+
+[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)

@@ -19,3 +19,7 @@ Works, except that text entry crashes it under Bitwig — the plugin picks a dif
 | --- | --- | --- | --- |
 | 2021-09-17 | Crash when removing Objeq Delay from the same track | unspecified | [#137](https://github.com/robbert-vdh/yabridge/issues/137) (closed, reported by jonaspeter) |
 | 2026-08-10 | Bitwig text-entry crash and `hide_daw` workaround | Bitwig | [yabridge known issues](https://github.com/robbert-vdh/yabridge#known-issues-and-fixes) |
+
+---
+
+[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)

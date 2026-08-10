@@ -18,3 +18,7 @@ Same tooltip freeze as Arturia's plugins: the GUI locks up while trying to show 
 | Date | Report | Environment | Source |
 | --- | --- | --- | --- |
 | 2026-08-10 | Tooltip freeze and winecfg workaround | any host | [yabridge known issues](https://github.com/robbert-vdh/yabridge#known-issues-and-fixes) |
+
+---
+
+[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)

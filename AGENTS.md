@@ -44,8 +44,9 @@ or plain Wine and LinVst where a report covers them.
 - Every plugin page needs: the status line
   (`*Status: <status> · last checked <YYYY-MM-DD>*`), a `[Vendor page](...)` link
   to the product, the caution line linking to the README's *Read this first*
-  section, and a `## Findings` table where every row carries a date and a link to
-  the source. Copy all four from an existing page; `check.py` enforces them.
+  section, a `## Findings` table where every row carries a date and a link to the
+  source, and the footer linking back to the index and to `CONTRIBUTING.md`. Copy
+  all of it from an existing page; `check.py` enforces them.
 - Don't soften the caution, on a page or in the README. The site publishes
   second-hand claims about other people's commercial software, and the reader has
   to know that before acting on a row.

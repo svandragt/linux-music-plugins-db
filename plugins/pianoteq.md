@@ -23,3 +23,7 @@ and iOS for Pianoteq 9, standalone and as a plugin. Use it and skip Wine. Checke
 | Date | Report | Environment | Source |
 | --- | --- | --- | --- |
 | 2026-08-10 | Reported working bridged on patched Wine | unspecified | search snippet only, source not opened |
+
+---
+
+[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)

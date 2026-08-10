@@ -18,3 +18,7 @@ Authorisation is not recalled between runs on current Wine, so the plugins canno
 | --- | --- | --- | --- |
 | 2023-05-07 | Phoscyon 2 activation doesn't work | unspecified | [#248](https://github.com/robbert-vdh/yabridge/issues/248) (closed, reported by franticnick) |
 | 2026-08-10 | Authorisation status not recalled | any host | [yabridge known issues](https://github.com/robbert-vdh/yabridge#known-issues-and-fixes) |
+
+---
+
+[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)

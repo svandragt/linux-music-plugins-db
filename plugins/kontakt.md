@@ -23,3 +23,7 @@ Works, but installing it is the hard part: Native Access 2.x needs Wine work, an
 | 2024-07-20 | Kontakt 7 crashes after installing DXVK | unspecified | [#356](https://github.com/robbert-vdh/yabridge/issues/356) (closed, reported by RichardJECooke) |
 | 2026-03-09 | Bad performance and render lag | new-wine10-embedding branch | [#469](https://github.com/robbert-vdh/yabridge/issues/469) (open, reported by kernelPanic0x) |
 | 2026-08-10 | Install procedure and Native Access notes | any host | [yabridge known issues](https://github.com/robbert-vdh/yabridge#known-issues-and-fixes) |
+
+---
+
+[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)

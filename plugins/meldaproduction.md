@@ -21,3 +21,7 @@ Works. Rendering is the weak spot: turn off the plugins' own GPU acceleration.
 | 2021-11-03 | Page fault with MSoundFactory | REAPER | [#144](https://github.com/robbert-vdh/yabridge/issues/144) (closed, reported by JonathanTroyer) |
 | 2021-08-05 | MComb crashing the host | Carla | [#126](https://github.com/robbert-vdh/yabridge/issues/126) (closed, reported by SquidRoe) |
 | 2026-08-10 | GPU acceleration rendering issues; offscreen positioning fix | any host | [yabridge known issues](https://github.com/robbert-vdh/yabridge#known-issues-and-fixes), [CHANGELOG](https://github.com/robbert-vdh/yabridge/blob/master/CHANGELOG.md) |
+
+---
+
+[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)

@@ -21,3 +21,7 @@ Works, but leaks file descriptors when Wine's *esync* is enabled until the syste
 | 2025-04-13 | Knobs and sliders don't work correctly | unspecified | [#417](https://github.com/robbert-vdh/yabridge/issues/417) (open, reported by 10kmotorola) |
 | 2022-11-03 | Phase Plant doesn't load saved states from Windows projects | Bitwig | [#210](https://github.com/robbert-vdh/yabridge/issues/210) (closed) |
 | 2026-08-10 | esync file-descriptor leak and the fsync workaround | any host | [yabridge known issues](https://github.com/robbert-vdh/yabridge#known-issues-and-fixes) |
+
+---
+
+[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)

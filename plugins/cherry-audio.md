@@ -17,3 +17,7 @@ Implicated in Bitwig plugin-indexing timeouts alongside Arturia. Single source.
 | Date | Report | Environment | Source |
 | --- | --- | --- | --- |
 | 2024-07-16 | Bitwig stopped loading yabridge plugins (indexing timeouts) | Bitwig | [#354](https://github.com/robbert-vdh/yabridge/issues/354) (closed 2024-07-18) |
+
+---
+
+[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)

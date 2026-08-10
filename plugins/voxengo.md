@@ -19,3 +19,7 @@ Works. Knobs behave better with one global setting changed.
 | --- | --- | --- | --- |
 | 2024-12-22 | Window offset, UI elements not aligned | REAPER | [#388](https://github.com/robbert-vdh/yabridge/issues/388) (closed, reported by cdunford) |
 | 2026-08-10 | Radial knob mode setting | any host | [yabridge known issues](https://github.com/robbert-vdh/yabridge#known-issues-and-fixes) |
+
+---
+
+[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)

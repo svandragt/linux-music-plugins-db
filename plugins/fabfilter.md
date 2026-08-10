@@ -20,3 +20,7 @@ Runs under yabridge. Long-standing community favourite for bridged use; one open
 | 2024-08-28 | Crash with FabFilter plugins, suspected host latency change | REAPER | [#364](https://github.com/robbert-vdh/yabridge/issues/364) (open, reported by sidoka-contact) |
 | 2026-08-10 | Plugin-group requirement for data-sharing VST2 instances | any host | [yabridge known issues](https://github.com/robbert-vdh/yabridge#known-issues-and-fixes) |
 | 2026-08-10 | Listed as working by forum posters | unspecified | [Gearspace thread](https://gearspace.com/board/music-computers/1449241-linux-compatible-hardware-software-plugins.html) — snippet only, thread not opened |
+
+---
+
+[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)

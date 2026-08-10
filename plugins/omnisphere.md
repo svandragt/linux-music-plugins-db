@@ -18,3 +18,7 @@ Mixed reports. The installer path involves PowerShell, which is where the one ya
 | --- | --- | --- | --- |
 | 2022-12-01 | Omnisphere error involving PowerShell.exe | unspecified | [#220](https://github.com/robbert-vdh/yabridge/issues/220) (closed, reported by mukundasik) |
 | 2026-08-10 | Mixed community reports | unspecified | [LinuxMusicians thread](https://linuxmusicians.com/viewtopic.php?t=27992) — snippet only, thread not opened |
+
+---
+
+[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)

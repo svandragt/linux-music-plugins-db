@@ -19,3 +19,7 @@ Sample-library loading failures are fixable by reinstalling into a clean Wine pr
 | --- | --- | --- | --- |
 | 2026-02-25 | BBC SO black screen | unspecified | [#467](https://github.com/robbert-vdh/yabridge/issues/467) (open, reported by sclewis900) |
 | 2026-08-10 | Clean-prefix fix for library loading errors | any host | [yabridge known issues](https://github.com/robbert-vdh/yabridge#known-issues-and-fixes) |
+
+---
+
+[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)

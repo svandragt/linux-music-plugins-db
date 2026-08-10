@@ -21,3 +21,7 @@ Broken on stock Wine: the GUI is black while audio keeps working. Serum 2 needs 
 | 2025-03-19 | Serum 2 graphical issues | unspecified | [#413](https://github.com/robbert-vdh/yabridge/issues/413) (open, reported by drac-dot-gay) |
 | 2026-04-27 | Serum 2 no GUI | Bitwig 6.0, Wine Staging 11.7, yabridge 5.1.1-7 | [#476](https://github.com/robbert-vdh/yabridge/issues/476) (open, reported by smallghostbigthot) |
 | 2026-08-10 | Patched Wine adding Direct2D 1.3 and `dcomp.dll` | any host | [wine-d2d1-dcomp](https://github.com/mklnln/wine-d2d1-dcomp) |
+
+---
+
+[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)

@@ -23,3 +23,7 @@ Works with workarounds. Three separate reporters in 2026 alone, so the problems 
 | 2026-02-25 | Crash when the plugin UI is open and track channels change | REAPER | [#468](https://github.com/robbert-vdh/yabridge/issues/468) (open, reported by duck-117) |
 | 2026-04-08 | Large FPS drops when the plugin's track is selected | REAPER | [#473](https://github.com/robbert-vdh/yabridge/issues/473) (open, reported by illegitimate-egg) |
 | 2026-08-10 | Tooltip freeze workaround; VST3 scan memory fix | any host | [yabridge known issues](https://github.com/robbert-vdh/yabridge#known-issues-and-fixes), [CHANGELOG](https://github.com/robbert-vdh/yabridge/blob/master/CHANGELOG.md) |
+
+---
+
+[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)

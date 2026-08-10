@@ -19,3 +19,7 @@ Both needed yabridge-side fixes and then worked: a painfully slow redraw for Aur
 | Date | Report | Environment | Source |
 | --- | --- | --- | --- |
 | 2026-08-10 | Redraw workaround (5.0.2) and latency fix (5.0.5) | any host | [yabridge CHANGELOG](https://github.com/robbert-vdh/yabridge/blob/master/CHANGELOG.md) |
+
+---
+
+[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)

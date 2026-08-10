@@ -23,3 +23,7 @@ Work, with GUI quirks around resizable interfaces. Reported by several independe
 | 2021-04-29 | Soundtoys 5 VST2 blacklisted | Mixbus 7 | [#99](https://github.com/robbert-vdh/yabridge/issues/99) (closed, reported by durutti) |
 | 2020-07-19 | PSP E27 live resizing does not work | Bitwig 3.2.6 | [#27](https://github.com/robbert-vdh/yabridge/issues/27) (closed, reported by lentferj) |
 | 2026-08-10 | Expandable-GUI position fix | any host | [yabridge known issues](https://github.com/robbert-vdh/yabridge#known-issues-and-fixes) |
+
+---
+
+[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)

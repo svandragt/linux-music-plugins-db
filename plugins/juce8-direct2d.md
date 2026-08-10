@@ -22,3 +22,7 @@ Black window and then a crash. JUCE 8 renders through Direct2D 1.3; Wine impleme
 | 2024-12-18 | JUCE 8 plugins don't work — black screen and crash | Bitwig, REAPER, Mixbus | [#386](https://github.com/robbert-vdh/yabridge/issues/386) (closed 2026-06-04, reported by relaborn) |
 | 2026-02-25 | BBC SO black screen, Superior Drummer 3 broken dropdowns | unspecified | [#467](https://github.com/robbert-vdh/yabridge/issues/467) (open, reported by sclewis900) |
 | 2026-08-10 | Wine's Direct2D version gap | any host | [Wine bug 57833](https://list.winehq.org/hyperkitty/list/wine-bugs@list.winehq.org/message/VINNBRTJCXRSDT4IVS5HZODD753JMBXT/), [JUCE forum](https://forum.juce.com/t/juce8-direct2d-wine-yabridge/64298) |
+
+---
+
+[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)

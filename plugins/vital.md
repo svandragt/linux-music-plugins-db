@@ -23,3 +23,7 @@ alongside Windows and macOS, so nothing here needs bridging. Checked 2026-08-10 
 | Date | Report | Environment | Source |
 | --- | --- | --- | --- |
 | 2026-08-10 | Reported working bridged; native Linux build exists | unspecified | [Gearspace thread](https://gearspace.com/board/music-computers/1449241-linux-compatible-hardware-software-plugins.html) — snippet only, thread not opened |
+
+---
+
+[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)

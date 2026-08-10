@@ -19,3 +19,7 @@ Works. The freeze that used to hit Darkglass on load was fixed in yabridge itsel
 | --- | --- | --- | --- |
 | 2025-06-01 | Plugin could not be interacted with | REAPER | [#432](https://github.com/robbert-vdh/yabridge/issues/432) (closed, reported by idealemu) |
 | 2026-08-10 | Darkglass freeze on load fixed | any host | [yabridge CHANGELOG](https://github.com/robbert-vdh/yabridge/blob/master/CHANGELOG.md) |
+
+---
+
+[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)

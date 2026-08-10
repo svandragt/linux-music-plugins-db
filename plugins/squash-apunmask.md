@@ -26,3 +26,7 @@ Audio Squash. Checked 2026-08-10 on [apulsoft.ch](https://apulsoft.ch/).
 | Date | Report | Environment | Source |
 | --- | --- | --- | --- |
 | 2024-12-18 | Named as working JUCE 8 plugins with a software-render fallback | Bitwig, REAPER | [#386](https://github.com/robbert-vdh/yabridge/issues/386) (closed, thread discussion) |
+
+---
+
+[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)
