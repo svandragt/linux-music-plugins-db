@@ -1,8 +1,10 @@
+[yabridge compatibility tracker](../README.md) › TDR Nova (Tokyo Dawn Records)
+
 # TDR Nova (Tokyo Dawn Records)
 
 *Status: reported · last checked 2026-08-10*
 
-[Vendor page](https://www.tokyodawn.net/tdr-nova/) · [All plugins](../README.md)
+[Vendor page](https://www.tokyodawn.net/tdr-nova/)
 
 *Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
 
@@ -20,4 +22,4 @@ Works with one setting changed. Single source — yabridge's documentation is th
 
 ---
 
-[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)
+[Back to the tracker index](../README.md) · [How to correct this page](../CONTRIBUTING.md)

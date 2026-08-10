@@ -1,8 +1,10 @@
+[yabridge compatibility tracker](../README.md) › Sonic Academy Kick 2 / Cytomic The Drop
+
 # Sonic Academy Kick 2 / Cytomic The Drop
 
 *Status: reported · last checked 2026-08-10*
 
-[Vendor page](https://cytomic.com/product/drop/) · [All plugins](../README.md)
+[Vendor page](https://cytomic.com/product/drop/)
 
 *Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
 
@@ -21,4 +23,4 @@ Same tooltip freeze as Arturia's plugins: the GUI locks up while trying to show 
 
 ---
 
-[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)
+[Back to the tracker index](../README.md) · [How to correct this page](../CONTRIBUTING.md)

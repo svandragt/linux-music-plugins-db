@@ -1,8 +1,10 @@
+[yabridge compatibility tracker](../README.md) › Klanghelm
+
 # Klanghelm
 
 *Status: reported · last checked 2026-08-10*
 
-[Vendor page](https://klanghelm.com/) · [All plugins](../README.md)
+[Vendor page](https://klanghelm.com/)
 
 *Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
 
@@ -16,4 +18,4 @@ Reported working, single source.
 
 ---
 
-[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)
+[Back to the tracker index](../README.md) · [How to correct this page](../CONTRIBUTING.md)

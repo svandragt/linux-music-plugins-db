@@ -1,8 +1,10 @@
+[yabridge compatibility tracker](../README.md) › Soundtoys / PSPaudioware
+
 # Soundtoys / PSPaudioware
 
 *Status: verified · last checked 2026-08-10*
 
-[Vendor page](https://www.soundtoys.com/) · [All plugins](../README.md)
+[Vendor page](https://www.soundtoys.com/)
 
 *Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
 
@@ -26,4 +28,4 @@ Work, with GUI quirks around resizable interfaces. Reported by several independe
 
 ---
 
-[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)
+[Back to the tracker index](../README.md) · [How to correct this page](../CONTRIBUTING.md)

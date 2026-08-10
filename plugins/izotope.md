@@ -1,8 +1,10 @@
+[yabridge compatibility tracker](../README.md) › iZotope
+
 # iZotope
 
 *Status: confirmed broken · last checked 2026-08-10*
 
-[Vendor page](https://www.izotope.com/) · [All plugins](../README.md)
+[Vendor page](https://www.izotope.com/)
 
 *Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
 
@@ -22,4 +24,4 @@ Cannot be authorised: Wine's crypt32 implementation is missing what the iZotope 
 
 ---
 
-[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)
+[Back to the tracker index](../README.md) · [How to correct this page](../CONTRIBUTING.md)

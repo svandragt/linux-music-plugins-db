@@ -1,8 +1,10 @@
+[yabridge compatibility tracker](../README.md) › Vital
+
 # Vital
 
 *Status: reported · last checked 2026-08-10*
 
-[Vendor page](https://vital.audio/) · [All plugins](../README.md)
+[Vendor page](https://vital.audio/)
 
 *Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
 
@@ -26,4 +28,4 @@ alongside Windows and macOS, so nothing here needs bridging. Checked 2026-08-10 
 
 ---
 
-[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)
+[Back to the tracker index](../README.md) · [How to correct this page](../CONTRIBUTING.md)

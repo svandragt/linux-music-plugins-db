@@ -1,8 +1,10 @@
+[yabridge compatibility tracker](../README.md) › Cherry Audio
+
 # Cherry Audio
 
 *Status: reported · last checked 2026-08-10*
 
-[Vendor page](https://cherryaudio.com/) · [All plugins](../README.md)
+[Vendor page](https://cherryaudio.com/)
 
 *Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
 
@@ -20,4 +22,4 @@ Implicated in Bitwig plugin-indexing timeouts alongside Arturia. Single source.
 
 ---
 
-[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)
+[Back to the tracker index](../README.md) · [How to correct this page](../CONTRIBUTING.md)

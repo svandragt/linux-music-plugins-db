@@ -1,8 +1,10 @@
+[yabridge compatibility tracker](../README.md) › Pianoteq 9 (Modartt)
+
 # Pianoteq 9 (Modartt)
 
 *Status: reported · last checked 2026-08-10*
 
-[Vendor page](https://www.modartt.com/pianoteq) · [All plugins](../README.md)
+[Vendor page](https://www.modartt.com/pianoteq)
 
 *Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
 
@@ -26,4 +28,4 @@ and iOS for Pianoteq 9, standalone and as a plugin. Use it and skip Wine. Checke
 
 ---
 
-[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)
+[Back to the tracker index](../README.md) · [How to correct this page](../CONTRIBUTING.md)

@@ -1,8 +1,10 @@
+[yabridge compatibility tracker](../README.md) › KiloHearts
+
 # KiloHearts
 
 *Status: verified · last checked 2026-08-10*
 
-[Vendor page](https://kilohearts.com/) · [All plugins](../README.md)
+[Vendor page](https://kilohearts.com/)
 
 *Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
 
@@ -24,4 +26,4 @@ Works, but leaks file descriptors when Wine's *esync* is enabled until the syste
 
 ---
 
-[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)
+[Back to the tracker index](../README.md) · [How to correct this page](../CONTRIBUTING.md)

@@ -1,8 +1,10 @@
+[yabridge compatibility tracker](../README.md) › Omnisphere (Spectrasonics)
+
 # Omnisphere (Spectrasonics)
 
 *Status: reported, mixed · last checked 2026-08-10*
 
-[Vendor page](https://www.spectrasonics.net/products/omnisphere/) · [All plugins](../README.md)
+[Vendor page](https://www.spectrasonics.net/products/omnisphere/)
 
 *Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
 
@@ -21,4 +23,4 @@ Mixed reports. The installer path involves PowerShell, which is where the one ya
 
 ---
 
-[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)
+[Back to the tracker index](../README.md) · [How to correct this page](../CONTRIBUTING.md)

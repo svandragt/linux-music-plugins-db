@@ -73,10 +73,12 @@ def main():
             errors.append(f"plugins/{slug}.md: no findings table")
         if "not a compatibility guarantee" not in text:
             errors.append(f"plugins/{slug}.md: no caution line")
-        # Two links home: one at the top, one after the findings table.
-        if text.count("[All plugins](../README.md)") < 2:
-            errors.append(f"plugins/{slug}.md: needs a link back to the index at the "
-                          "top and in the footer")
+        # Two links home: the breadcrumb above the title, and the footer.
+        if text.count("](../README.md)") < 2:
+            errors.append(f"plugins/{slug}.md: needs a link back to the index in the "
+                          "breadcrumb and in the footer")
+        if not text.startswith("[yabridge compatibility tracker](../README.md) ›"):
+            errors.append(f"plugins/{slug}.md: no breadcrumb above the title")
 
     for error in errors:
         print(error)

@@ -1,8 +1,10 @@
+[yabridge compatibility tracker](../README.md) › Waves V13 VST3
+
 # Waves V13 VST3
 
 *Status: confirmed broken · last checked 2026-08-10*
 
-[Vendor page](https://www.waves.com/) · [All plugins](../README.md)
+[Vendor page](https://www.waves.com/)
 
 *Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
 
@@ -23,4 +25,4 @@ Memory problems under Wine and random crashes. yabridge's own advice is to avoid
 
 ---
 
-[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)
+[Back to the tracker index](../README.md) · [How to correct this page](../CONTRIBUTING.md)

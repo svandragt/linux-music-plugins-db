@@ -1,8 +1,10 @@
+[yabridge compatibility tracker](../README.md) › Valhalla Room
+
 # Valhalla Room
 
 *Status: reported · last checked 2026-08-10*
 
-[Vendor page](https://valhalladsp.com/shop/reverb/valhalla-room/) · [All plugins](../README.md)
+[Vendor page](https://valhalladsp.com/shop/reverb/valhalla-room/)
 
 *Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
 
@@ -16,4 +18,4 @@ Reported working. A second write-up naming it alongside Kontakt and Morph 2 exis
 
 ---
 
-[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)
+[Back to the tracker index](../README.md) · [How to correct this page](../CONTRIBUTING.md)

@@ -1,8 +1,10 @@
+[yabridge compatibility tracker](../README.md) › Minimal Audio Squash / apulSoft apUnmask
+
 # Minimal Audio Squash / apulSoft apUnmask
 
 *Status: reported · last checked 2026-08-10*
 
-[Vendor page](https://www.minimal.audio/products/squash) · [All plugins](../README.md)
+[Vendor page](https://www.minimal.audio/products/squash)
 
 *Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
 
@@ -29,4 +31,4 @@ Audio Squash. Checked 2026-08-10 on [apulsoft.ch](https://apulsoft.ch/).
 
 ---
 
-[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)
+[Back to the tracker index](../README.md) · [How to correct this page](../CONTRIBUTING.md)

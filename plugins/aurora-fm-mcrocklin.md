@@ -1,8 +1,10 @@
+[yabridge compatibility tracker](../README.md) › Audio Nebula Aurora FM / PolyChrome DSP McRocklin Suite
+
 # Audio Nebula Aurora FM / PolyChrome DSP McRocklin Suite
 
 *Status: reported · last checked 2026-08-10*
 
-[Vendor page](https://polychromedsp.com/) · [All plugins](../README.md)
+[Vendor page](https://polychromedsp.com/)
 
 *Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
 
@@ -22,4 +24,4 @@ Both needed yabridge-side fixes and then worked: a painfully slow redraw for Aur
 
 ---
 
-[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)
+[Back to the tracker index](../README.md) · [How to correct this page](../CONTRIBUTING.md)

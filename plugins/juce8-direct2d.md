@@ -1,8 +1,10 @@
+[yabridge compatibility tracker](../README.md) › JUCE 8 plugins needing Direct2D 1.3
+
 # JUCE 8 plugins needing Direct2D 1.3
 
 *Status: confirmed broken · last checked 2026-08-10*
 
-[Vendor page](https://juce.com/) · [All plugins](../README.md)
+[Vendor page](https://juce.com/)
 
 *Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
 
@@ -25,4 +27,4 @@ Black window and then a crash. JUCE 8 renders through Direct2D 1.3; Wine impleme
 
 ---
 
-[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)
+[Back to the tracker index](../README.md) · [How to correct this page](../CONTRIBUTING.md)

@@ -1,8 +1,10 @@
+[yabridge compatibility tracker](../README.md) › D16 Group
+
 # D16 Group
 
 *Status: confirmed broken · last checked 2026-08-10*
 
-[Vendor page](https://d16.pl/) · [All plugins](../README.md)
+[Vendor page](https://d16.pl/)
 
 *Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
 
@@ -21,4 +23,4 @@ Authorisation is not recalled between runs on current Wine, so the plugins canno
 
 ---
 
-[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)
+[Back to the tracker index](../README.md) · [How to correct this page](../CONTRIBUTING.md)

@@ -1,8 +1,10 @@
+[yabridge compatibility tracker](../README.md) › Serum 2 (Xfer Records)
+
 # Serum 2 (Xfer Records)
 
 *Status: confirmed broken · last checked 2026-08-10*
 
-[Vendor page](https://xferrecords.com/products/serum-2) · [All plugins](../README.md)
+[Vendor page](https://xferrecords.com/products/serum-2)
 
 *Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
 
@@ -24,4 +26,4 @@ Broken on stock Wine: the GUI is black while audio keeps working. Serum 2 needs 
 
 ---
 
-[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)
+[Back to the tracker index](../README.md) · [How to correct this page](../CONTRIBUTING.md)

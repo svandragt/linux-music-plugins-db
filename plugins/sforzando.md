@@ -1,8 +1,10 @@
+[yabridge compatibility tracker](../README.md) › Sforzando (Plogue)
+
 # Sforzando (Plogue)
 
 *Status: verified · last checked 2026-08-10*
 
-[Vendor page](https://www.plogue.com/products/sforzando.html) · [All plugins](../README.md)
+[Vendor page](https://www.plogue.com/products/sforzando.html)
 
 *Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
 
@@ -22,4 +24,4 @@ Works. The GUI can look like it ignores mouse clicks, but that is a redraw probl
 
 ---
 
-[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)
+[Back to the tracker index](../README.md) · [How to correct this page](../CONTRIBUTING.md)

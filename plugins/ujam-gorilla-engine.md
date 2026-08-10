@@ -1,8 +1,10 @@
+[yabridge compatibility tracker](../README.md) › ujam / Gorilla Engine / Loopcloud
+
 # ujam / Gorilla Engine / Loopcloud
 
 *Status: verified · last checked 2026-08-10*
 
-[Vendor page](https://www.ujam.com/) · [All plugins](../README.md)
+[Vendor page](https://www.ujam.com/)
 
 *Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
 
@@ -25,4 +27,4 @@ Fail to load with a `JS_EXEC_FAILED` error until output redirection is turned of
 
 ---
 
-[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)
+[Back to the tracker index](../README.md) · [How to correct this page](../CONTRIBUTING.md)

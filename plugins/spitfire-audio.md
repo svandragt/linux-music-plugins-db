@@ -1,8 +1,10 @@
+[yabridge compatibility tracker](../README.md) › Spitfire Audio (BBC SO, LABS)
+
 # Spitfire Audio (BBC SO, LABS)
 
 *Status: reported, mixed · last checked 2026-08-10*
 
-[Vendor page](https://www.spitfireaudio.com/) · [All plugins](../README.md)
+[Vendor page](https://www.spitfireaudio.com/)
 
 *Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
 
@@ -22,4 +24,4 @@ Sample-library loading failures are fixable by reinstalling into a clean Wine pr
 
 ---
 
-[All plugins](../README.md) · [How to correct this page](../CONTRIBUTING.md)
+[Back to the tracker index](../README.md) · [How to correct this page](../CONTRIBUTING.md)
