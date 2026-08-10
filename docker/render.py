@@ -3,9 +3,9 @@
 
 Usage: render.py <source.md> <template.html> <output.html>
 
-The template must contain the placeholders {{TITLE}} and {{CONTENT}}. Everything
-in the source after a `<!-- site:end -->` marker is dropped, which keeps
-repository-only sections (build instructions and such) off the public page.
+The template must contain the placeholders {{TITLE}} and {{CONTENT}}. Links to
+sibling markdown files (CONTRIBUTING.md and such) are rewritten to point at the
+repository, since those files are not published alongside the page.
 """
 
 import html
@@ -14,7 +14,7 @@ import sys
 
 import markdown
 
-END_MARKER = "<!-- site:end -->"
+REPO_URL = "https://github.com/svandragt/linux-music-plugins-db"
 
 # Status text in the last table column -> badge/dot modifier class.
 STATUS_CLASSES = (
@@ -59,6 +59,15 @@ def tagify(html_text):
     )
 
 
+def link_markdown_files(html_text):
+    """Point relative links to .md files at the repository instead of the site."""
+    return re.sub(
+        r'href="(?!\w+:|//|#)([^"]+\.md)"',
+        rf'href="{REPO_URL}/blob/main/\1"',
+        html_text,
+    )
+
+
 def extract_title(source):
     match = re.search(r"^#\s+(.+)$", source, flags=re.MULTILINE)
     return match.group(1).strip() if match else "README"
@@ -73,11 +82,10 @@ def main(argv):
     with open(source_path, encoding="utf-8") as fh:
         source = fh.read()
 
-    source = source.split(END_MARKER, 1)[0]
     title = extract_title(source)
 
     body = markdown.markdown(source, extensions=["tables", "sane_lists"])
-    body = tagify(badgeify(body))
+    body = tagify(badgeify(link_markdown_files(body)))
     body = "\n".join("    " + line for line in body.splitlines())
 
     with open(template_path, encoding="utf-8") as fh:
