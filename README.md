@@ -19,8 +19,10 @@ compatibility guarantee.
 **Where it will be wrong:**
 
 - Nobody here retested these plugins. Almost every entry summarises what someone
-  else wrote, often years ago, and only a handful of sources were opened and read
-  in full. Some rows rest on a search-engine snippet, and say so on their page.
+  else wrote, often years ago. Every source now cited has been opened and read —
+  two forum threads only through the Internet Archive, because the live sites are
+  behind bot challenges. Where a claim could not be traced to a source that opens,
+  it was withdrawn, and the page says so.
 - Compatibility is version-bound and moves fast. A row is only about the Wine,
   yabridge, plugin and host versions named on its page — and a fix on yabridge's
   `master` branch is not in a release. Your combination is probably different.
@@ -105,10 +107,15 @@ them, since they are one project's voice. Vendor testimonials are not sources.
 | [Pianoteq 9 (Modartt)](plugins/pianoteq.md) | 2026-08-10 | reported |
 | [Aurora FM / McRocklin Suite](plugins/aurora-fm-mcrocklin.md) | 2026-08-10 | reported |
 | [Minimal Audio Squash / apulSoft apUnmask](plugins/squash-apunmask.md) | 2026-08-10 | reported |
+| [Pulsar Audio](plugins/pulsar-audio.md) | 2026-08-10 | reported |
+| [Toontrack (Superior Drummer 3, EZdrummer, EZkeys)](plugins/toontrack.md) | 2026-08-10 | reported, mixed |
+| [Spire (Reveal Sound)](plugins/spire.md) | 2026-08-10 | reported, mixed |
+| [DMG Audio](plugins/dmg-audio.md) | 2026-08-10 | reported, mixed |
 | [UAD (native plugins)](plugins/uad-plugin-alliance.md) | 2026-08-10 | reported, mixed |
 | [Spitfire Audio (BBC SO, LABS)](plugins/spitfire-audio.md) | 2026-08-10 | reported, mixed |
-| [Omnisphere (Spectrasonics)](plugins/omnisphere.md) | 2026-08-10 | reported, mixed |
 | [Serum 2 (Xfer Records)](plugins/serum-2.md) | 2026-08-10 | confirmed broken |
+| [Omnisphere (Spectrasonics)](plugins/omnisphere.md) | 2026-08-10 | confirmed broken |
+| [ToneBoosters](plugins/toneboosters.md) | 2026-08-10 | confirmed broken |
 | [Waves V13 VST3](plugins/waves-v13-vst3.md) | 2026-08-10 | confirmed broken |
 | [iZotope](plugins/izotope.md) | 2026-08-10 | confirmed broken |
 | [D16 Group](plugins/d16-group.md) | 2026-08-10 | confirmed broken |

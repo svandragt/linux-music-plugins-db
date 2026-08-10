@@ -2,24 +2,35 @@
 
 # Omnisphere (Spectrasonics)
 
-*Status: reported, mixed · last checked 2026-08-10*
+*Status: confirmed broken · last checked 2026-08-10*
 
 [Vendor page](https://www.spectrasonics.net/products/omnisphere/)
 
 *Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
 
-Mixed reports. The installer path involves PowerShell, which is where the one yabridge report stalls.
+Downgraded from `reported, mixed` on 2026-08-10, after the LinuxMusicians thread
+was finally opened. It contains no report of Omnisphere working — one person
+describing a frozen interface, one reply suggesting a Wine downgrade that is never
+confirmed to have helped, and the rest of the thread arguing about alternatives.
+The installer path also involves PowerShell, which is where the one yabridge issue
+stalls.
 
 ## Caveats and fixes
 
-- The 2025 LinuxMusicians thread could not be opened from here — the mixed reading rests on a search snippet.
+- Correction, 2026-08-10: the 'mixed' reading came from a search snippet. The
+  thread itself does not support it. Nobody in any opened source reports
+  Omnisphere running acceptably under yabridge.
+- Suggested but unconfirmed: downgrade to Wine Staging 9.21.
+- DXVK makes it worse — the reporter says it 'kills the GUI completely'.
+- There is no Omnisphere demo, so this is unusually hard for anyone to test.
 
 ## Findings
 
 | Date | Report | Environment | Source |
 | --- | --- | --- | --- |
 | 2022-12-01 | Omnisphere error involving PowerShell.exe | unspecified | [#220](https://github.com/robbert-vdh/yabridge/issues/220) (closed, reported by mukundasik) |
-| 2026-08-10 | Mixed community reports | unspecified | [LinuxMusicians thread](https://linuxmusicians.com/viewtopic.php?t=27992) — snippet only, thread not opened |
+| 2025-02-05 | GUI frozen most of the time, occasionally a preset can be chosen; tried Wine 7.20, 9.0, 9.21 and 10; DXVK kills the GUI outright | Zorin OS 17.2 Lite, Bitwig and Renoise, Wine Staging 10.0, yabridge 5.1.1 | [LinuxMusicians thread](https://linuxmusicians.com/viewtopic.php?t=27992) (sebasaturn), read via the [Internet Archive](https://web.archive.org/web/20250624220350/https://linuxmusicians.com/viewtopic.php?t=27992) |
+| 2025-02-05 | Reply advising a downgrade to Wine Staging 9.21; no confirmation it worked | as above | [LinuxMusicians thread](https://linuxmusicians.com/viewtopic.php?t=27992) (bill80) |
 
 ---
 

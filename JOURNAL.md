@@ -5,6 +5,46 @@ decided, and what is still unresolved. Newest entry first. Add an entry when you
 change the pipeline or do a research pass — not for a single-row fix, which the
 commit message covers on its own.
 
+## 2026-08-10 — Second sweep: five new entries, and the snippet rows opened
+
+Five plugins added, and every source the last pass could only see as a
+search-engine snippet has now been read in full. 36 entries.
+
+New: **Toontrack** (`reported, mixed` — three separate reporters on Superior
+Drummer 3 across Wine 9.18, 9.21 and 11.0, plus EZkeys 2 and EZdrummer 3),
+**ToneBoosters** (`confirmed broken` bridged, with a native Linux build the vendor
+ships), **Spire** by Reveal Sound (`reported, mixed` — two reporters, two different
+Direct3D/Direct2D walls, both with workarounds), **Pulsar Audio** (`reported` —
+Poseidon hangs Renoise on song load with no error), **DMG Audio**
+(`reported, mixed` — keyboard value entry breaks in Bitwig, works in REAPER).
+
+Both forum threads are now behind bot challenges — Cloudflare on Gearspace, an
+Anubis proof-of-work on LinuxMusicians — so they were read through the Internet
+Archive instead. That changed things:
+
+- **Omnisphere goes from `reported, mixed` to `confirmed broken`.** The thread the
+  'mixed' reading came from contains no report of it working: one frozen GUI, one
+  unconfirmed suggestion to downgrade Wine, and ten posts of argument.
+- **Vital's 'reported working bridged' was wrong.** The source lists it under
+  *native*. Claim withdrawn.
+- **Pianoteq's bridged claim had no URL at all**, so there was nothing to re-open.
+  Withdrawn too, and replaced with sources that do open.
+- The Gearspace thread turns out to be largely **one tester**, not a community
+  consensus. Nothing was promoted on the strength of it. It is a good source
+  though — dated, version-specific, and it records failures as well as successes.
+
+Also gained evidence: **Spitfire** (BBC SO hangs Ardour's plugin scan, and has been
+moved to JUCE 8 without the vendor saying so) and **Waves** (licence installer
+failure, plus a counter-report of it running via iLok machine auth).
+
+Full record — every issue, reporter, date, version, quote, the vendor pages that
+would not respond, and the twelve leads left on the table:
+[docs/research/2026-08-10-second-sweep.md](docs/research/2026-08-10-second-sweep.md).
+
+Still unresolved: the Reveal Sound site times out from here, so its vendor link is
+unverified. Page 2 of the Gearspace thread was not read. And nobody has retested
+Omnisphere since February 2025.
+
 ## 2026-08-10 — Scope decided: bridged only, native as a note
 
 Considered widening the database to Linux-compatible instruments and effects
