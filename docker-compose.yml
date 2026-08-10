@@ -1,0 +1,10 @@
+services:
+  site:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: linux-music-plugins-db:latest
+    container_name: yabridge-tracker
+    restart: unless-stopped
+    ports:
+      - "${HTTP_PORT:-8080}:80"

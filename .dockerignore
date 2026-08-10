@@ -1,0 +1,5 @@
+*
+!README.md
+!docker/render.py
+!docker/template.html
+!docker/nginx.conf

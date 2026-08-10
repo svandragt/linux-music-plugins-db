@@ -1,0 +1,26 @@
+# Overlay for serving the page on a subdomain behind an existing Traefik.
+#
+#   docker compose -f docker-compose.yml -f docker-compose.traefik.yml up -d --build
+#
+# Assumes Traefik is already running, watching the Docker provider, and attached
+# to the external network named by TRAEFIK_NETWORK, with entrypoint `websecure`
+# and a working certificate resolver. Needs Compose v2.24+ for the `!reset` tag.
+services:
+  site:
+    # The proxy reaches the container over the shared network; no host port needed.
+    ports: !reset []
+    networks:
+      - proxy
+    labels:
+      traefik.enable: "true"
+      traefik.docker.network: "${TRAEFIK_NETWORK:-web}"
+      traefik.http.routers.yabridge-tracker.rule: "Host(`${SITE_HOST:?set SITE_HOST in .env}`)"
+      traefik.http.routers.yabridge-tracker.entrypoints: "websecure"
+      traefik.http.routers.yabridge-tracker.tls: "true"
+      traefik.http.routers.yabridge-tracker.tls.certresolver: "${TRAEFIK_CERT_RESOLVER:-letsencrypt}"
+      traefik.http.services.yabridge-tracker.loadbalancer.server.port: "80"
+
+networks:
+  proxy:
+    external: true
+    name: "${TRAEFIK_NETWORK:-web}"
