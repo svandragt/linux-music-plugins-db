@@ -1,0 +1,126 @@
+# Journal
+
+Dated notes on how this database changes and why: what was researched, what was
+decided, and what is still unresolved. Newest entry first. Add an entry when you
+change the pipeline or do a research pass — not for a single-row fix, which the
+commit message covers on its own.
+
+## 2026-08-10 — Research pass: yabridge sources
+
+Swept the yabridge repository and community sources for entries missing from the
+table and for status changes. Findings below are **not yet applied to the
+table** — the snippet-only rows need opening before anything is promoted to
+`verified`.
+
+Reference points: yabridge master at `b580a9f` (2026-08-02); latest *release* is
+still 5.1.1 (2024-12-23), so everything marked "master" below is unreleased.
+
+### Status changes to existing rows
+
+- **Serum** should split. Serum 1 works with fixes (disable `d2d1.dll`, install
+  `gdiplus`) per yabridge's known-issues. Serum 2 is broken on stock Wine —
+  black GUI, audio fine — partial with Xfer's Wine config keys, working on
+  patched Wine.
+  [#413](https://github.com/robbert-vdh/yabridge/issues/413) (2025-03-19),
+  [#476](https://github.com/robbert-vdh/yabridge/issues/476) (2026-04-27; Bitwig
+  6.0, Wine Staging 11.7, yabridge 5.1.1-7),
+  [CHANGELOG unreleased](https://github.com/robbert-vdh/yabridge/blob/master/CHANGELOG.md),
+  [wine-d2d1-dcomp](https://github.com/mklnln/wine-d2d1-dcomp).
+- **Kontakt (NI)** → `verified`. Works; Native Access 2.x needs Wine work (legacy
+  1.x installer, Windows 10 mode, manual .iso mount). VST3 patch-load slowness in
+  REAPER fixed in 5.0.5 (2023-05-07).
+- **MeldaProduction** → `verified`, caveats: disable GPU acceleration; offscreen
+  popup positioning fixed on master; CPU higher than on Windows.
+- **TDR Nova** → `verified`, caveats: set Continuous Drag to Linear.
+- **UAD / Waves / Plugin Alliance** — split **Waves V13 VST3** out as
+  `confirmed broken`: memory issues and random crashes, V12 recommended.
+- **iZotope** stays `confirmed broken`, now second-sourced (Wine crypt32 auth).
+
+### New entries — verified
+
+- **JUCE 8 plugins needing Direct2D 1.3** — broken: black window and crash, as
+  Wine implements D2D to 1.2 and lacks `dcomp.dll`. Named: Audio Modeling SWAM
+  and Ambiente, Aberrant DSP, Hertz Drums, Synchro Arts VocAlign 6 Pro. Hosts:
+  Bitwig, REAPER, Mixbus. Fixable only by a vendor Wine fallback or patched Wine.
+  [#386](https://github.com/robbert-vdh/yabridge/issues/386) (opened 2024-12-18,
+  closed 2026-06-04),
+  [Wine bug 57833](https://list.winehq.org/hyperkitty/list/wine-bugs@list.winehq.org/message/VINNBRTJCXRSDT4IVS5HZODD753JMBXT/),
+  [JUCE forum 64298](https://forum.juce.com/t/juce8-direct2d-wine-yabridge/64298),
+  [wine-d2d1-dcomp](https://github.com/mklnln/wine-d2d1-dcomp).
+- **Arturia** — works with caveats: tooltip GUI freeze needs winecfg "Hide Wine
+  version"; VST3 hitbox/mouse misalignment on Wayland+KDE
+  ([#497](https://github.com/robbert-vdh/yabridge/issues/497), 2026-08-06);
+  implicated in Bitwig indexing timeouts
+  ([#354](https://github.com/robbert-vdh/yabridge/issues/354), 2024-07-16).
+- **Minimal Audio Squash** and **apulSoft apUnmask** — work: JUCE 8 but ship a
+  Wine-detect software-render fallback. Useful counter-examples to the row above.
+
+### New entries — reported (single source)
+
+From yabridge's known-issues unless noted: Spitfire Audio (BBC SO, LABS — clean
+prefix), Sonic Academy Kick 2 and Cytomic The Drop (tooltip freeze), Plogue
+Sforzando (redraw only), Voxengo (radial knob mode), Scaler 2 (software
+rendering), ujam / Gorilla Engine / Loopcloud (`disable_pipes`), D16 Group
+(**broken** — authorization not recalled), Cherry Audio (Bitwig indexing
+timeouts, #354), Audio Nebula Aurora FM and PolyChrome DSP McRocklin Suite
+(fixed in 5.0.2 / 5.0.5), Pianoteq 9 (works bridged on patched Wine; native build
+preferred, same footnote as Vital), Spectrasonics Omnisphere (mixed —
+[LinuxMusicians, 2025](https://linuxmusicians.com/viewtopic.php?t=27992)),
+Soundtheory Gullfoss (KVR).
+
+### Host and environment notes
+
+Candidates for a second table on the site rather than plugin rows:
+
+- **Wine 9.22 through 11.x do not work with released yabridge 5.1.1** — mouse
+  clicks don't register. Downgrade to Wine 9.21 or run a dev build; fixed on
+  master.
+- **Ubuntu 24.10 + Ardour** — prebuilt binaries hang and consume memory until the
+  host crashes; worked around on master. Related:
+  [#377](https://github.com/robbert-vdh/yabridge/issues/377) (2024-10-20, also
+  Bitwig and Studio One on Kubuntu 24.10).
+- **Ardour 7.3–8.1** — some VST3 plugins freeze; 8.2 queries `yabridge_version`
+  to fix it (5.1.0).
+- **REAPER** — VST3 modules stay loaded without "Allow complete unload of VST
+  plug-ins"; drag-and-drop needs `editor_force_dnd`.
+  [#472](https://github.com/robbert-vdh/yabridge/issues/472) (GNOME/NVIDIA
+  redraw) closed 2026-06-28.
+- **Wine 11.12 + KDE Plasma 6** — VST3 editor crashes, open:
+  [#488](https://github.com/robbert-vdh/yabridge/issues/488).
+- `editor_xembed` and `editor_coordinate_hack` have been removed from yabridge.
+
+### Evidence gaps
+
+- gearspace.com, linuxmusicians.com, kvraudio.com, forum.juce.com, reddit,
+  interfacinglinux.com, meow.garden and litui.ca were unreachable from the
+  research environment (blocked egress). Claims resting on those are from search
+  snippets only and stay `reported` until someone opens the thread.
+- Reddit is unreachable both ways, so the r/linuxaudio and r/linux_gaming angle
+  is unverified beyond the Native Instruments thread already cited.
+- `Valhalla Room` likely has a second source (a Bitwig write-up naming Morph 2,
+  Kontakt and Valhalla Room as working) that could not be opened — left at
+  `reported`.
+
+## 2026-08-10 — Site pipeline
+
+Converted the hand-written `index.html` into `README.md` plus tooling that
+renders it back to a styled page, so the content is editable and reviewable as
+markdown and the page is a build artifact.
+
+- `docker/render.py` converts the README, wraps the status column in badge spans
+  and rewrites relative links to sibling markdown files so they resolve from the
+  published page. `docker/template.html` carries the original dark palette,
+  retargeted from hand-written classes to plain elements.
+- Two-stage Dockerfile (python render → nginx), `docker-compose.yml` for a host
+  port and `docker-compose.traefik.yml` as a subdomain overlay. The overlay
+  drops the published port and joins Traefik's network, which needs Compose
+  v2.24+ for `!reset`.
+- `index.html` is now generated and gitignored — the removed file stays in git
+  history if the original markup is ever needed.
+- The image build itself is unverified: no Docker daemon was available. Both
+  compose configurations were validated with `docker compose config`, and the
+  render output was checked by hand.
+
+Docs went to the audience that needs them: `CONTRIBUTING.md` for adding entries,
+`docker/README.md` for build and hosting, `AGENTS.md` for agents editing the
+table.

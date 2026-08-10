@@ -39,6 +39,11 @@ attached — the data matters more than the code.
 - Don't promote an entry to `verified` on the strength of two reports that trace
   back to the same person or thread.
 
+- Add a [JOURNAL.md](JOURNAL.md) entry, newest first, after a research pass or a
+  change to the pipeline. Record what was checked, what was decided, and what is
+  still unresolved — including sources you could not open. A single-row fix needs
+  no entry; the commit message covers it.
+
 ## Build and hosting
 
 See [docker/README.md](docker/README.md). Verify a change by rendering the page
