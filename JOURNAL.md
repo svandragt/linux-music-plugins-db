@@ -13,6 +13,9 @@ searched against the issue tracker for reports by named users, so each finding n
 carries a date, a reporter and a link. The yabridge README and CHANGELOG were read
 from the repository at `master`.
 
+Full record — method, every issue and reporter, what stayed unreachable, and the
+open questions: [docs/research/2026-08-10-verification.md](docs/research/2026-08-10-verification.md).
+
 Structural change: the README table is now an **index** — plugin, last checked,
 status — and each row links to `plugins/<slug>.md` carrying the dated findings,
 host DAW, Wine and yabridge versions, fixes and a vendor product link. Version
