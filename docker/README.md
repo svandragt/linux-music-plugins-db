@@ -48,6 +48,7 @@ editing the README.
 | `CONTRIBUTING.md` | How to add or change an entry |
 | `AGENTS.md` | Instructions for coding agents working in this repository |
 | `JOURNAL.md` | Dated research passes and pipeline changes |
+| `docs/research/` | Full evidence behind each research pass |
 | `docker/README.md` | This file — build and hosting |
 | `docker/render.py` | Markdown → HTML renderer (adds status badges) |
 | `docker/template.html` | Page shell and styling |

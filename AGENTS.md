@@ -43,6 +43,11 @@ attached — the data matters more than the code.
   change to the pipeline. Record what was checked, what was decided, and what is
   still unresolved — including sources you could not open. A single-row fix needs
   no entry; the commit message covers it.
+- Commit the full evidence from a research pass to `docs/research/<date>-<topic>.md`
+  and link it from the journal entry. Every claim, every URL, every date, every
+  version, and every source you could not reach — including leads too weak for
+  the table. Losing the raw findings costs more than the file does; the journal
+  entry is the summary, not the record.
 
 ## Build and hosting
 

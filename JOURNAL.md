@@ -12,6 +12,11 @@ table and for status changes. Findings below are **not yet applied to the
 table** — the snippet-only rows need opening before anything is promoted to
 `verified`.
 
+Full record, with every source, the complete upstream known-issues list, the
+issue-by-issue notes and the open questions:
+[docs/research/2026-08-10-yabridge-sweep.md](docs/research/2026-08-10-yabridge-sweep.md).
+The summary below is the reviewable version of it.
+
 Reference points: yabridge master at `b580a9f` (2026-08-02); latest *release* is
 still 5.1.1 (2024-12-23), so everything marked "master" below is unreleased.
 
