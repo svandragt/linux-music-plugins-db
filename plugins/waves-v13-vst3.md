@@ -4,6 +4,8 @@
 
 [Vendor page](https://www.waves.com/) · [All plugins](../README.md)
 
+*Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
+
 Memory problems under Wine and random crashes. yabridge's own advice is to avoid Waves, or fall back to the V12 versions.
 
 ## Caveats and fixes

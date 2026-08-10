@@ -4,6 +4,8 @@
 
 [Vendor page](https://www.arturia.com/) · [All plugins](../README.md)
 
+*Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
+
 Works with workarounds. Three separate reporters in 2026 alone, so the problems are well attested — as is the fact that people run them.
 
 ## Caveats and fixes

@@ -4,6 +4,8 @@
 
 [Vendor page](https://www.voxengo.com/) · [All plugins](../README.md)
 
+*Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
+
 Works. Knobs behave better with one global setting changed.
 
 ## Caveats and fixes

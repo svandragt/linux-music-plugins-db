@@ -4,6 +4,8 @@
 
 [Vendor page](https://valhalladsp.com/shop/reverb/valhalla-room/) · [All plugins](../README.md)
 
+*Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
+
 Reported working. A second write-up naming it alongside Kontakt and Morph 2 exists but could not be opened, so it stays single-sourced.
 
 ## Findings

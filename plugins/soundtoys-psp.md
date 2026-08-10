@@ -4,6 +4,8 @@
 
 [Vendor page](https://www.soundtoys.com/) · [All plugins](../README.md)
 
+*Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
+
 Work, with GUI quirks around resizable interfaces. Reported by several independent users over five years.
 
 ## Caveats and fixes

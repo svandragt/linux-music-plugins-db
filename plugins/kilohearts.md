@@ -4,6 +4,8 @@
 
 [Vendor page](https://kilohearts.com/) · [All plugins](../README.md)
 
+*Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
+
 Works, but leaks file descriptors when Wine's *esync* is enabled until the system hits its open-file limit and Wine stops working.
 
 ## Caveats and fixes

@@ -12,7 +12,8 @@ Both files are the content. `site/` is generated output, so never edit it.
 ## Adding or changing an entry
 
 1. Add or edit `plugins/<slug>.md`. Copy the shape of an existing page: the
-   status line, the vendor link, a short summary, caveats, and a findings table.
+   status line, the vendor link, the caution line, a short summary, caveats, and a
+   findings table. Keep the caution line as it is on every other page.
 2. Add or update the row in the README table. The status and the last-checked
    date must match the page's status line — `python3 docker/check.py` fails if
    they drift.

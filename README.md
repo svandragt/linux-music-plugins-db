@@ -10,6 +10,38 @@ This table is an index. Each plugin has a page with the dated reports behind it,
 the host DAW and Wine or yabridge versions involved, and the fixes that were
 needed — the detail that would make this table unreadable.
 
+## Read this first
+
+**What this is:** second-hand reports, collected by hand, about software none of
+the people here maintain. It is a starting point for your own testing, not a
+compatibility guarantee.
+
+**Where it will be wrong:**
+
+- Nobody here retested these plugins. Almost every entry summarises what someone
+  else wrote, often years ago, and only a handful of sources were opened and read
+  in full. Some rows rest on a search-engine snippet, and say so on their page.
+- Compatibility is version-bound and moves fast. A row is only about the Wine,
+  yabridge, plugin and host versions named on its page — and a fix on yabridge's
+  `master` branch is not in a release. Your combination is probably different.
+- `verified` means two independent people reported the same thing. It does not
+  mean anyone confirmed it on your distribution, your host, or your hardware.
+- `confirmed broken` means broken in the reports we found. A vendor or Wine update
+  may have fixed it since; a working plugin may have broken since.
+- Check each page's *last checked* date before trusting it.
+
+**Don't buy a plugin on the strength of a row here.** Use the vendor's trial, and
+ask the vendor about Linux and Wine before paying. Very few of these vendors
+support Wine at all, and using their plugins this way may fall outside their terms
+— that is between you and them.
+
+Not affiliated with, endorsed by, or speaking for yabridge, WineHQ, or any plugin
+vendor named here. Product and brand names belong to their owners; they appear
+only to identify what a report is about. No warranty, express or implied.
+
+Found something wrong or out of date? That's the useful contribution — open an
+issue or a pull request.
+
 ## Legend
 
 - **verified** — 2+ independent sources

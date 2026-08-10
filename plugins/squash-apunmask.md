@@ -4,6 +4,8 @@
 
 [Vendor page](https://www.minimal.audio/products/squash) · [All plugins](../README.md)
 
+*Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
+
 Useful counter-examples: JUCE 8 plugins that do work, because both ship a Wine-detecting software-render fallback.
 
 ## Caveats and fixes

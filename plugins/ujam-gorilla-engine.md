@@ -4,6 +4,8 @@
 
 [Vendor page](https://www.ujam.com/) · [All plugins](../README.md)
 
+*Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
+
 Fail to load with a `JS_EXEC_FAILED` error until output redirection is turned off. Reported by several independent users.
 
 ## Caveats and fixes

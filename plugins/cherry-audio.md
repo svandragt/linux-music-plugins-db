@@ -4,6 +4,8 @@
 
 [Vendor page](https://cherryaudio.com/) · [All plugins](../README.md)
 
+*Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
+
 Implicated in Bitwig plugin-indexing timeouts alongside Arturia. Single source.
 
 ## Caveats and fixes

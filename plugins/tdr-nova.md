@@ -4,6 +4,8 @@
 
 [Vendor page](https://www.tokyodawn.net/tdr-nova/) · [All plugins](../README.md)
 
+*Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
+
 Works with one setting changed. Single source — yabridge's documentation is the only report that could be opened.
 
 ## Caveats and fixes

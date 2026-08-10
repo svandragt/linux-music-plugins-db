@@ -4,6 +4,8 @@
 
 [Vendor page](https://www.scalerplugin.com/) · [All plugins](../README.md)
 
+*Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
+
 Interface lags or blacks out until software rendering is enabled. Single source.
 
 ## Caveats and fixes

@@ -4,6 +4,8 @@
 
 [Vendor page](https://vital.audio/) · [All plugins](../README.md)
 
+*Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
+
 Reported working bridged, but there is a native Linux build — use that instead and skip Wine entirely.
 
 ## Caveats and fixes

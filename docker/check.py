@@ -71,6 +71,8 @@ def main():
             errors.append(f"plugins/{slug}.md: no vendor page link")
         if "## Findings" not in text or "| Date |" not in text:
             errors.append(f"plugins/{slug}.md: no findings table")
+        if "not a compatibility guarantee" not in text:
+            errors.append(f"plugins/{slug}.md: no caution line")
 
     for error in errors:
         print(error)

@@ -4,6 +4,8 @@
 
 [Vendor page](https://neuraldsp.com/) · [All plugins](../README.md)
 
+*Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
+
 Works. The freeze that used to hit Darkglass on load was fixed in yabridge itself.
 
 ## Caveats and fixes

@@ -83,15 +83,16 @@ def link_markdown_files(html_text, page, pages):
     page_dir = posixpath.dirname(page.replace(os.sep, "/"))
 
     def repl(match):
-        target = match.group(1)
+        target, fragment = match.group(1), match.group(2) or ""
         resolved = posixpath.normpath(posixpath.join(page_dir, target))
         if resolved in pages:
             href = posixpath.relpath(pages[resolved], page_dir or ".")
         else:
             href = f"{REPO_URL}/blob/main/{resolved}"
-        return f'href="{href}"'
+        return f'href="{href}{fragment}"'
 
-    return re.sub(r'href="(?!\w+:|//|#)([^"]+\.md)"', repl, html_text)
+    # A link may carry an anchor: ../README.md#read-this-first
+    return re.sub(r'href="(?!\w+:|//|#)([^"#]+\.md)(#[^"]*)?"', repl, html_text)
 
 
 def extract_title(source):
@@ -103,7 +104,8 @@ def render(source_path, template, pages):
     with open(source_path, encoding="utf-8") as fh:
         source = fh.read()
 
-    body = markdown.markdown(source, extensions=["tables", "sane_lists"])
+    # 'toc' is here for the heading ids, so links like #read-this-first resolve.
+    body = markdown.markdown(source, extensions=["tables", "sane_lists", "toc"])
     body = tagify(badgeify(link_markdown_files(body, source_path, pages)))
     body = "\n".join("    " + line for line in body.splitlines())
 
@@ -113,7 +115,53 @@ def render(source_path, template, pages):
     )
 
 
+def selftest():
+    """Assert the rewriting rules. Run: render.py --selftest"""
+    pages = {"README.md": "index.html", "plugins/serum-2.md": "plugins/serum-2.html"}
+
+    # A link to a published page becomes its .html output, anchor kept.
+    got = link_markdown_files(
+        '<a href="../README.md#read-this-first">caution</a>',
+        "plugins/serum-2.md",
+        pages,
+    )
+    assert 'href="../index.html#read-this-first"' in got, got
+
+    # Down into a subdirectory, from the index.
+    got = link_markdown_files(
+        '<a href="plugins/serum-2.md">Serum 2</a>', "README.md", pages
+    )
+    assert 'href="plugins/serum-2.html"' in got, got
+
+    # A markdown file that is not published points at the repository instead.
+    got = link_markdown_files(
+        '<a href="CONTRIBUTING.md">how to help</a>', "README.md", pages
+    )
+    assert f'href="{REPO_URL}/blob/main/CONTRIBUTING.md"' in got, got
+
+    # Absolute links and bare anchors are left alone.
+    for href in ('href="https://example.com/a.md"', 'href="#legend"'):
+        assert link_markdown_files(href, "README.md", pages) == href
+
+    # Status cells get a badge; the class comes from the text.
+    assert 'class="badge broken"' in badgeify("<tr><td>confirmed broken</td></tr>")
+    assert 'class="badge yes"' in badgeify("<tr><td>verified</td></tr>")
+    assert 'class="badge no"' in badgeify("<tr><td>reported, mixed</td></tr>")
+    # A cell holding markup is left alone, so linked cells are never mangled.
+    assert badgeify('<tr><td><a href="x">y</a></td></tr>') == (
+        '<tr><td><a href="x">y</a></td></tr>'
+    )
+
+    assert output_path("README.md") == "index.html"
+    assert output_path("plugins/serum-2.md") == "plugins/serum-2.html"
+
+    print("selftest ok")
+
+
 def main(argv):
+    if len(argv) == 2 and argv[1] == "--selftest":
+        return selftest()
+
     if len(argv) < 4:
         sys.exit(__doc__.strip())
 

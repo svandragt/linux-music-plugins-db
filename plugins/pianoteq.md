@@ -4,6 +4,8 @@
 
 [Vendor page](https://www.modartt.com/pianoteq) · [All plugins](../README.md)
 
+*Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
+
 Reported working bridged on patched Wine, but like Vital it has a native Linux build that makes the question moot.
 
 ## Caveats and fixes

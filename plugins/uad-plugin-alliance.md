@@ -4,6 +4,8 @@
 
 [Vendor page](https://www.uaudio.com/) · [All plugins](../README.md)
 
+*Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
+
 One forum account of getting UAD's native plugins running and then abandoning them for stability. Nothing in the yabridge tracker.
 
 ## Caveats and fixes

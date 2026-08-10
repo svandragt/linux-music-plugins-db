@@ -4,6 +4,8 @@
 
 [Vendor page](https://xferrecords.com/products/serum-2) · [All plugins](../README.md)
 
+*Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
+
 Broken on stock Wine: the GUI is black while audio keeps working. Serum 2 needs Direct2D 1.3, which Wine does not implement.
 
 ## Caveats and fixes

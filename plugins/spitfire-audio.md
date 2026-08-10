@@ -4,6 +4,8 @@
 
 [Vendor page](https://www.spitfireaudio.com/) · [All plugins](../README.md)
 
+*Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
+
 Sample-library loading failures are fixable by reinstalling into a clean Wine prefix, but BBC SO has also been reported as a black screen, which looks like the JUCE 8 Direct2D problem instead.
 
 ## Caveats and fixes

@@ -4,6 +4,8 @@
 
 [Vendor page](https://d16.pl/) · [All plugins](../README.md)
 
+*Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
+
 Authorisation is not recalled between runs on current Wine, so the plugins cannot be kept activated.
 
 ## Caveats and fixes

@@ -1,0 +1,17 @@
+version: 2
+updates:
+  # Keeps the SHA pins in the Pages workflow current.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: ci
+
+  # Base images in the Dockerfile: python for the render stage, nginx to serve.
+  - package-ecosystem: docker
+    directory: /
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: docker

@@ -4,6 +4,8 @@
 
 [Vendor page](https://www.plogue.com/products/sforzando.html) · [All plugins](../README.md)
 
+*Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
+
 Works. The GUI can look like it ignores mouse clicks, but that is a redraw problem — the state underneath is updating.
 
 ## Caveats and fixes

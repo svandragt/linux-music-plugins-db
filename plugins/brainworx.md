@@ -4,6 +4,8 @@
 
 [Vendor page](https://www.plugin-alliance.com/) · [All plugins](../README.md)
 
+*Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
+
 Reported working by forum posters. No yabridge issue confirms or denies it, and the thread could not be opened from here.
 
 ## Caveats and fixes

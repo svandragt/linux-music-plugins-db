@@ -4,6 +4,8 @@
 
 [Vendor page](https://www.spectrasonics.net/products/omnisphere/) · [All plugins](../README.md)
 
+*Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
+
 Mixed reports. The installer path involves PowerShell, which is where the one yabridge report stalls.
 
 ## Caveats and fixes

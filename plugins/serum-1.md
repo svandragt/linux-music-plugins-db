@@ -4,6 +4,8 @@
 
 [Vendor page](https://xferrecords.com/) · [All plugins](../README.md)
 
+*Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
+
 Works once two Wine tweaks are in place. Single source: yabridge's own documentation.
 
 ## Caveats and fixes

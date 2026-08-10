@@ -4,6 +4,8 @@
 
 [Vendor page](https://polychromedsp.com/) · [All plugins](../README.md)
 
+*Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
+
 Both needed yabridge-side fixes and then worked: a painfully slow redraw for Aurora FM, and latency changing during initialisation for McRocklin.
 
 ## Caveats and fixes

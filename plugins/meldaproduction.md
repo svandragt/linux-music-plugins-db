@@ -4,6 +4,8 @@
 
 [Vendor page](https://www.meldaproduction.com/) · [All plugins](../README.md)
 
+*Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
+
 Works. Rendering is the weak spot: turn off the plugins' own GPU acceleration.
 
 ## Caveats and fixes

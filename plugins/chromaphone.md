@@ -4,6 +4,8 @@
 
 [Vendor page](https://www.applied-acoustics.com/chromaphone-3/) · [All plugins](../README.md)
 
+*Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
+
 Works, except that text entry crashes it under Bitwig — the plugin picks a different text-entry path when it detects Bitwig.
 
 ## Caveats and fixes

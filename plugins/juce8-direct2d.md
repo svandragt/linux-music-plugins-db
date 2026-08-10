@@ -4,6 +4,8 @@
 
 [Vendor page](https://juce.com/) · [All plugins](../README.md)
 
+*Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
+
 Black window and then a crash. JUCE 8 renders through Direct2D 1.3; Wine implements Direct2D to 1.2 and has no `dcomp.dll`. Affects any plugin built on JUCE 8 that does not ship a fallback renderer.
 
 ## Caveats and fixes

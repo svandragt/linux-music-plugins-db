@@ -4,6 +4,8 @@
 
 [Vendor page](https://cytomic.com/product/drop/) · [All plugins](../README.md)
 
+*Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
+
 Same tooltip freeze as Arturia's plugins: the GUI locks up while trying to show a tooltip. Single source.
 
 ## Caveats and fixes

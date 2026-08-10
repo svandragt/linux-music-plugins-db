@@ -4,6 +4,8 @@
 
 [Vendor page](https://www.native-instruments.com/) · [All plugins](../README.md)
 
+*Second-hand reports, not a compatibility guarantee — nobody here retested this. Read the [caution](../README.md#read-this-first) before relying on it.*
+
 Works, but installing it is the hard part: Native Access 2.x needs Wine work, and libraries often have to be mounted and installed by hand.
 
 ## Caveats and fixes
