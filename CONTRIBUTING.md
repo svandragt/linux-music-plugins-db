@@ -1,5 +1,16 @@
 # Contributing
 
+## What belongs here
+
+Plugins that need a translation layer — yabridge, or plain Wine and LinVst — to run
+on Linux. Native Linux plugins are deliberately out of scope; see
+[Scope](README.md#scope) for why and for the lists that already cover them.
+
+If a plugin already in the table also ships a native Linux build of the same
+product, add a `## Native alternative` section to its page saying what the vendor
+states, with a link and the date you checked. Don't use it to recommend different
+plugins that do a similar job.
+
 ## How the content is arranged
 
 [README.md](README.md) holds the index table: one row per plugin, its status, and

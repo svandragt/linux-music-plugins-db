@@ -8,6 +8,14 @@
 
 Useful counter-examples: JUCE 8 plugins that do work, because both ship a Wine-detecting software-render fallback.
 
+## Native alternative
+
+apulSoft ships native Linux VST3 builds — apQualizr2's requirements name a *Linux
+64-bit VST3 host*, and a Linux VST3 arrived in a 1.1.x update. Which apulSoft
+plugins are covered isn't clear from outside, so check the vendor's system
+requirements for the one you want before bridging it. Nothing native for Minimal
+Audio Squash. Checked 2026-08-10 on [apulsoft.ch](https://apulsoft.ch/).
+
 ## Caveats and fixes
 
 - Shows the JUCE 8 Direct2D breakage is a vendor build choice, not an inevitability.

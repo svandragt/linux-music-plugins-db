@@ -8,6 +8,12 @@
 
 Reported working bridged on patched Wine, but like Vital it has a native Linux build that makes the question moot.
 
+## Native alternative
+
+Pianoteq ships a native Linux build — Modartt lists Linux alongside Windows, macOS
+and iOS for Pianoteq 9, standalone and as a plugin. Use it and skip Wine. Checked
+2026-08-10 on [modartt.com/pianoteq](https://www.modartt.com/pianoteq).
+
 ## Caveats and fixes
 
 - Prefer the native build.

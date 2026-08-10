@@ -5,6 +5,33 @@ decided, and what is still unresolved. Newest entry first. Add an entry when you
 change the pipeline or do a research pass — not for a single-row fix, which the
 commit message covers on its own.
 
+## 2026-08-10 — Scope decided: bridged only, native as a note
+
+Considered widening the database to Linux-compatible instruments and effects
+generally, native builds included. Decided against it, and wrote the decision down
+in three places so it holds: a *Scope* section on the index, a scope block at the
+top of `AGENTS.md`, and a "what belongs here" section in `CONTRIBUTING.md`.
+
+Reasoning: the question "does this ship a Linux build?" is answered authoritatively
+by the vendor, so the two-independent-sources machinery adds nothing — verification
+is only worth doing where nobody official will make the claim. And the cataloguing
+is already done: [linuxaudio.org](https://wiki.linuxaudio.org/apps/all) indexes over
+1,500 entries, [awesome-linuxaudio](https://github.com/nodiscc/awesome-linuxaudio)
+curates plugins and hosts and was last updated 2026-07-31. Both links checked live.
+
+What did get added is the overlap, which was already there informally on the Vital
+and Pianoteq pages: a `## Native alternative` section, only for a *same-product*
+native build, only on a page that already exists, with the vendor's own wording, a
+link and a check date. Explicitly not a place to recommend different plugins that
+do a similar job — that is taste, can't be sourced, and never stops growing.
+
+Checked for native builds among the existing rows: **Vital** (Ubuntu 18.04+),
+**Pianoteq 9** (Linux listed with Windows, macOS, iOS) and **apulSoft** (apQualizr2
+names a Linux 64-bit VST3 host; which other apulSoft plugins are covered isn't clear
+from outside, so the page says to check the vendor). **MeldaProduction** and
+**Voxengo** were checked and are Wine-only, so they get no section — the rule is
+positive claims only, never an assertion that no Linux build exists.
+
 ## 2026-08-10 — Verification pass, detail pages, dated entries
 
 Applied the research below to the content, after checking it rather than trusting

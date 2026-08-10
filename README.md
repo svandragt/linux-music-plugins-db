@@ -42,6 +42,32 @@ only to identify what a report is about. No warranty, express or implied.
 Found something wrong or out of date? That's the useful contribution — open an
 issue or a pull request.
 
+## Scope
+
+**In scope:** Windows audio plugins running on Linux through a translation layer —
+yabridge above all, and plain Wine or LinVst where a report covers them. That is
+where the information is scattered, contradictory and undated, which is the only
+reason this database earns its keep.
+
+**Out of scope:** cataloguing native Linux plugins. Not because they don't matter
+— they are usually the better answer — but because the question "does this ship a
+Linux build?" already has an authoritative answer on the vendor's own page, and
+the lists below already do the cataloguing:
+
+- [Linux Audio applications index](https://wiki.linuxaudio.org/apps/all) — over
+  1,500 indexed entries, alphabetical
+- [awesome-linuxaudio](https://github.com/nodiscc/awesome-linuxaudio) — curated
+  LV2, LADSPA and VST plugins alongside hosts and utilities
+
+Nothing here needs two independent sources: a vendor either ships a Linux build or
+it doesn't. Verification is for claims nobody official will make.
+
+**Where the two meet:** when a plugin already in this table also has a native
+Linux build of *the same product*, its page says so under **Native alternative**,
+because the best outcome of landing on one of these rows is finding out you don't
+need to bridge anything. That's a note on an existing row, not an invitation to
+add rows for plugins that were never bridged.
+
 ## Legend
 
 - **verified** — 2+ independent sources

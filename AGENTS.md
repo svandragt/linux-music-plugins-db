@@ -8,6 +8,24 @@ An unofficial compatibility tracker for running Windows audio plugins on Linux
 through yabridge. It is a content repository with a small static-site pipeline
 attached — the data matters more than the code.
 
+## Scope — read before adding anything
+
+Only plugins that need a translation layer to run on Linux belong here: yabridge,
+or plain Wine and LinVst where a report covers them.
+
+- **Do not add native Linux plugins as rows.** Whether a vendor ships a Linux build
+  is answered authoritatively on the vendor's own page, and general indexes already
+  cover it — [linuxaudio.org](https://wiki.linuxaudio.org/apps/all),
+  [awesome-linuxaudio](https://github.com/nodiscc/awesome-linuxaudio). Reproducing
+  that means owning hundreds of stale rows for no new information.
+- The only place native builds appear is a **`## Native alternative`** section on a
+  page that already exists, when the *same product* also ships a Linux build. Say
+  what the vendor states, link the vendor page, and date the check.
+- Don't turn that section into a recommendation of *different* plugins that do a
+  similar job. That's taste, it can't be sourced, and it never stops growing.
+- A request to "cover Linux plugins generally" is a scope change, not a content
+  task. Say so and leave it to the maintainer.
+
 ## Rules
 
 - `README.md` is the index: one row per plugin, `| Plugin / brand | Last checked |

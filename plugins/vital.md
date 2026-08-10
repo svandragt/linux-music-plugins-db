@@ -8,6 +8,12 @@
 
 Reported working bridged, but there is a native Linux build — use that instead and skip Wine entirely.
 
+## Native alternative
+
+Vital ships a native Linux build: the vendor lists **Ubuntu Linux 18.04 and above**
+alongside Windows and macOS, so nothing here needs bridging. Checked 2026-08-10 on
+[vital.audio](https://vital.audio/).
+
 ## Caveats and fixes
 
 - The native build is the recommendation, not a workaround.
