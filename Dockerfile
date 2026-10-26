@@ -1,5 +1,5 @@
 # Stage 1: render the markdown sources -> site/
-FROM python:3.14-alpine AS render
+FROM python:3.15-alpine AS render
 
 RUN pip install --no-cache-dir "markdown==3.6"
 
