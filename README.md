@@ -157,5 +157,5 @@ Each page carries the date it was last checked.
 ## Licence
 
 The compatibility data, meaning this README's table and the pages in `plugins/`,
-is licensed under [CC BY 4.0](LICENSE-DATA). The code, including the site build and
-the checks in `docker/`, is licensed under [GPL-3.0](LICENSE).
+is licensed under [CC BY 4.0](https://github.com/svandragt/linux-music-plugins-db/blob/main/LICENSE-DATA). The code, including the site build and
+the checks in `docker/`, is licensed under [GPL-3.0](https://github.com/svandragt/linux-music-plugins-db/blob/main/LICENSE).
