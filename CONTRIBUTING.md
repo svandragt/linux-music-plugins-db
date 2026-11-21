@@ -62,3 +62,8 @@ Open `site/index.html` in a browser. Check that new rows picked up the right
 status badge — the renderer colours the last column by its text.
 
 Build and hosting details live in [docker/README.md](docker/README.md).
+
+## Licence
+
+By contributing an entry, you agree to license it under [CC BY 4.0](LICENSE-DATA).
+Code contributions are licensed under [GPL-3.0](LICENSE).
